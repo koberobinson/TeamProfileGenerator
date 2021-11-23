@@ -1,14 +1,14 @@
-const inquirer = require("inquirer");
-const Manager = require("./employees/manager");
-const Engineer = require("./employees/engineeer");
-const Intern = require("./employees/intern");
-const path = require("path");
-const fs = require("fs"); 
+var inquirer = require('inquirer');
+const Manager = require('./employees/manager');
+const Engineer = require('./employees/engineeer');
+const Intern = require('./employees/intern');
+const path = require('path');
+const fs = require('fs'); 
 
-const OUTPUT_DIR = path.resolve(__dirname, "output");
-const outputPath = path.join(OUTPUT_DIR, "team.html");
+const OUTPUT_DIR = path.resolve(__dirname, 'output');
+const outputPath = path.join(OUTPUT_DIR, 'team.html');
 
-const render = require("./employees/render");
+const render = require('./employees/render');
 
 const employeesArray = [];
 
